@@ -21,9 +21,10 @@
     text-align: left;
     width: 300px;
     border-radius: 5px;
+    font-family: 'M PLUS 1', sans-serif;
 }
 .code {
-    font-family: monospace;
+    font-family: 'M PLUS 1', sans-serif;
 }
 .container {
     margin-top: 30px;
