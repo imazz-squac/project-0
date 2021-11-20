@@ -1,0 +1,24 @@
+:host{
+    --height: 20vh;
+    --default-padding: 2rem;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    height: var(--height);
+}
+
+.banner-side-img{
+    width: var(--height);
+}
+
+.call-to-action{
+    flex: 1;
+    padding-left: var(--default-padding);
+}
+
+.center-text{
+    text-align: center;
+}
