@@ -1,4 +1,4 @@
-
+import '@lwc/synthetic-shadow';
 import { createElement } from 'lwc';
 import Container from 'c/container';
 
