@@ -1,5 +1,21 @@
 <template>
-    <div class="footer-container">
-        Footer
-    </div>
+    <section class="footer-container">
+        <img 
+        class="logo"
+        src="../../../resources/hasbro-logo.png" 
+        alt="logo"/>
+        <div class="footer-info">
+            <ul class="footer-nav">
+                <template for:each={footerLinks} for:item="link">
+                    <a href={link.link} key={link.text}>
+                        <li>
+                            <h5 class="footer-text">{link.text}</h5>
+                        </li>
+                    </a>
+                </template>
+            </ul>
+            <h6 class="footer-text">PRODUCTS NOT AVAILABLE EVERYWHERE</h6>
+            <h6 class="footer-text">© 2021 Hasbro. All rights reserved. All audio, visual and textual content on this site (including all names, characters, images, trademarks and logos) are protected by trademarks, copyrights and other Intellectual Property rights owned by Hasbro or its subsidiaries, licensors, licensees, suppliers and accounts.</h6>
+        </div>
+    </section>
 </template>
