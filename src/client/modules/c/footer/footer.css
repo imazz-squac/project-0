@@ -1,0 +1,10 @@
+@import 'cssStyles/mainStyles';
+.footer-container{
+    background: var(--secondary-accent);
+    color: white;
+}
+
+.copyright{
+    background: #7e615c;
+    color: white;
+}

@@ -1,7 +1,8 @@
 <template>
-    <div class="header">
-      <h1 class='center-text'>Bean Juice</h1>
-      <div class="slds-tabs_default">
+    
+    <div class="header ">
+      <h1 class='center-text slds-align_absolute-center page-title'>Bean Juice</h1>
+      <div class="slds-tabs_default slds-tabs_medium slds-align_absolute-center">
         <ul class="slds-tabs_default__nav" role="tablist">
           <li class="slds-tabs_default__item slds-is-active" title="Home" role="presentation" onclick={swapTabs}>
             <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab_default-home" id="tab_default-home__item">Home</a>
@@ -22,18 +23,19 @@
             <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-gifts" id="tab_default-gifts__item">Gifts</a>
           </li>
         </ul>
-
-        
       </div>
     </div>
     <div id="tab_default-home" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab_default-home__item">
       <c-banner></c-banner>
       <c-seasonal-display></c-seasonal-display>
-      <div class="slds-grid">
+      <div class="slds-grid component-row slds-gutters">
         <div class="slds-col slds-size_1-of-2">
           <c-featured-items></c-featured-items>
         </div>
-        <div class="slds-col slds-size_1-of-2"></div>
+        <div class="border"></div>
+        <div class="slds-col slds-size_1-of-2">
+          <c-rewards-ad></c-rewards-ad>
+        </div>
       </div>
     </div>
 
@@ -42,4 +44,6 @@
     <div id="tab_default-location" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-location__item">Location Content</div>
     <div id="tab_default-rewards" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-rewards__item">Rewards Content</div>
     <div id="tab_default-gifts" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-gifts__item">Gifts Content</div>
+
+    <c-footer></c-footer>
 </template>

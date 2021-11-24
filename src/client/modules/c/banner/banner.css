@@ -1,5 +1,7 @@
+@import 'cssStyles/mainStyles';
+
 :host{
-    --height: 20vh;
+    --height: 30vh;
     --default-padding: 2rem;
 }
 
@@ -8,17 +10,29 @@
     flex-direction: row;
     align-content: flex-start;
     height: var(--height);
+    background: linear-gradient(180deg,var(--main-accent),transparent,transparent);
+    margin-bottom: 10vh;
 }
 
 .banner-side-img{
     width: var(--height);
+    position: absolute;
+    left: -6rem;
 }
 
 .call-to-action{
     flex: 1;
-    padding-left: var(--default-padding);
+    padding-left: 3vw;
+    position: absolute;
+    left: 12rem;
 }
 
-.center-text{
-    text-align: center;
+.main-heading{
+    font-size: 4em;
+    font-family: 'Notable', sans-serif;
+}
+
+.sub-heading{
+    font-size: 3em;
+    padding-left: 2vw;
 }
