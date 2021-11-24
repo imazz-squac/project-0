@@ -1,7 +1,7 @@
 import { LightningElement } from 'lwc';
 
 export default class Container extends LightningElement {
-    /*
+    
     swapTabs(event){
         let activeTab = this.template.querySelector('.slds-is-active');
         let activeLink = activeTab.querySelector('a');
@@ -23,5 +23,5 @@ export default class Container extends LightningElement {
         targetContent.classList.add('slds-show');
 
     }
-    */
+    
 }

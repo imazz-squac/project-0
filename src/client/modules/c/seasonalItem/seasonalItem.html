@@ -1,8 +1,9 @@
 <template>
-    <div>
-        <img src={imagePath} alt={imageAlt} ></d>
-        <div>
-            <p>{itemDescription}</p>
+    <div class='slds-col slds-size_1-of-3 seasonal-item'>
+        <img src={imagePath} alt={imageAlt} class='seasonal-image'></d>
+        <div class="description-container">
+            <h3>{itemName}</h3>
+            <p class='seasonal-description'>{itemDescription}</p>
         </div>
     </div>
 </template>

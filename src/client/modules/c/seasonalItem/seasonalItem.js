@@ -9,4 +9,7 @@ export default class SeasonalItem extends LightningElement {
 
     @api
     itemDescription;
+
+    @api
+    itemName;
 }
