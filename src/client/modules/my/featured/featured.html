@@ -5,42 +5,15 @@
             <h1 class="featured-title-text"><em>PRODUCTS</em></h1>
         </div>
         <section class="featured-products-array">
-            <div class="product-container">
-                <img src="../../../resources/featured_products/pharaoh.jpg" alt="pharaoh" class="product-img">
-                <div class="product-title">
-                    <h4><em>PHARAOH</em></h4>
-                    <h6>NERF ULTRA</h6>
+            <template for:each={productArray} for:item="product">
+                <div class="product-container" key={product.model}>
+                    <img src={product.imgSource} alt={product.model} class="product-img">
+                    <div class="product-title">
+                        <h4><em>{product.model}</em></h4>
+                        <h6>{product.make}</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="product-container">
-                <img src="../../../resources/featured_products/basr.jpeg" alt="BASR-L" class="product-img">
-                <div class="product-title">
-                    <h4><em>BASR-L</em></h4>
-                    <h6>NERF FORTNITE</h6>
-                </div>
-            </div>
-            <div class="product-container">
-                <img src="../../../resources/featured_products/motostryke.jpg" alt="motostryke" class="product-img">
-                <div class="product-title">
-                    <h4><em>MOTOSTRYKE</em></h4>
-                    <h6>NERF MEGA</h6>
-                </div>
-            </div>
-            <div class="product-container">
-                <img src="../../../resources/featured_products/Commander.jpg" alt="commander" class="product-img">
-                <div class="product-title">
-                    <h4><em>COMMANDER</em></h4>
-                    <h6>NERF ELITE 2.0</h6>
-                </div>
-            </div>
-            <div class="product-container">
-                <img src="../../../resources/featured_products/elite.jpg" alt="elite" class="product-img">
-                <div class="product-title">
-                    <h4><em>ELITE 2.0 TURBINE</em></h4>
-                    <h6>NERF ELITE</h6>
-                </div>
-            </div>
+            </template>
         </section>
-
     </div>
 </template>

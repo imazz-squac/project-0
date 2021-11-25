@@ -1,5 +1,7 @@
 <template>
     <div class="search-container">
-        Search
+        <form action="submit" onsubmit={handleSubmit}>
+            <input class="search-input" value={searchInput} placeholder="search" onchange={handleChange} />
+        </form>
     </div>
 </template>
