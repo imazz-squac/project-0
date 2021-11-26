@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h3>Follow Us</h3>
-        <div class="slds-grid">
+        <h3 class="slds-text-heading_medium">Follow Us</h3>
+        <div class="slds-grid slds-gutters socials-container">
             <template for:each={socials} for:item="social">
                 <c-social-icon icon-link={social} key={social}></c-social-icon>
             </template>

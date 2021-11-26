@@ -41,6 +41,12 @@ export default class Container extends LightningElement {
     rotateItem(event){
         let target = event.currentTarget;
         let childNodeList = target.parentNode.children;
+        let oldTarget = target.parentNode.querySelector('.slds-is-active');
+        
+        oldTarget.classList.remove('slds-is-active');
+        oldTarget.setAttribute('aria-selected','false');
+
+
         for(let child in childNodeList){
             if(childNodeList[child]==target){
                 let newItem = childNodeList[child];
@@ -48,12 +54,11 @@ export default class Container extends LightningElement {
                 this.imageSrc = this.items[child].image;
                 this.itemName = this.items[child].name;
                 this.itemDescription= this.items[child].desc;
-                
-                target.classList.remove('slds-is-active');
-                target.setAttribute('aria-selected','false');
 
-                newItem.classList.add('slds-is-active');
-                newItem.setAttribute('aria-selected','true');
+                let newLink = newItem.querySelector('a');
+
+                newLink.classList.add('slds-is-active');
+                newLink.setAttribute('aria-selected','true');
                 
             }
         }

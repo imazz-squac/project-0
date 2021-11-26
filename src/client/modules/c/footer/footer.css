@@ -6,5 +6,9 @@
 
 .copyright{
     background: #7e615c;
-    color: white;
+    color:lightgray;
+}
+
+.slds-col{
+    padding: .75rem;
 }

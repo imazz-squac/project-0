@@ -1,10 +1,5 @@
 <template>
     <div class="slds-grid">
-        <!--
-        <div class="seasonal-title slds-col slds-size_1-of-12">
-            <h1 class="slds-align_absolute-center">SEASONAL</h1>
-        </div>
-    -->
         <div class="slds-col slds-size_1-of-12 seasonal-title">
             <div class="slds-grid_vertical slds-grid title-container">
                 <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>S</strong></p>
@@ -17,10 +12,12 @@
                 <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>L</strong></p>
             </div>
         </div>
-        <div class="slds-col slds-size_11-of-12 seasonal-display slds-grid slds-gutters ">
-            <template for:each={items} for:item="sItem">
-                <c-seasonal-item image-alt={sItem.alt} image-path = {sItem.image} item-description = {sItem.desc} key={sItem.name} item-name={sItem.name}></c-seasonal-item>
-            </template>
+        <div class="slds-col slds-size_11-of-12 ">
+            <div class="slds-grid seasonal-display">
+                <template for:each={items} for:item="sItem">
+                    <c-seasonal-item image-alt={sItem.alt} image-path = {sItem.image} item-description = {sItem.desc} key={sItem.name} item-name={sItem.name}></c-seasonal-item>
+                </template>
+            </div>
         </div>
     </div>
     

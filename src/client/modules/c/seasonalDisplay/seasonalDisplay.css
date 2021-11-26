@@ -1,6 +1,6 @@
 @import 'cssStyles/mainStyles';
 .seasonal-display{
-    height: var(--component-row-height);
+    /*height: var(--component-row-height);*/
     padding: 8vh 1vw;
     background-color: var(--main-accent);
     gap: 1vw;
@@ -20,5 +20,5 @@
 }
 
 .title-container p{
-    font-size: 5rem;
+    font-size: 5vh;
 }

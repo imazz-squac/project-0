@@ -11,6 +11,9 @@ export default class FooterSocials extends LightningElement {
 
     @api
     socials = [
-        "/resources/twitterIcon.svg"
+        "/resources/twitterIcon.svg",
+        "/resources/youtubeIcon.svg",
+        "/resources/instagramIcon.svg",
+        "/resources/facebookIcon.svg"
     ]
 }
