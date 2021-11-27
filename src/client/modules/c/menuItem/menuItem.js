@@ -16,9 +16,12 @@ export default class MenuItem extends LightningElement {
     @api
     display;
 
+    filtered;
+
     constructor(){
         super();
         this.display=true;
+        this.filtered = [];
     }
 
     renderedCallback(){
@@ -30,6 +33,15 @@ export default class MenuItem extends LightningElement {
     }
 
     @api filterChange(filter){
-        this.display = (this.tags.indexOf(filter)!=-1) ? !this.display:this.display;
+        let filtered = this.filtered.indexOf(filter);
+        if(filtered!=-1){
+            this.filtered.splice(filtered);
+            if(this.filtered.length==0) this.display = true;
+        }
+        else if(this.tags.indexOf(filter)!=-1){
+            this.display = false;
+            this.filtered.push(filter);
+        }
+        //this.display = (this.tags.indexOf(filter)!=-1) ? !this.display:this.display;
     }
 }
