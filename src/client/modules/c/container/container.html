@@ -10,40 +10,45 @@
           <li class="slds-tabs_default__item" title="Menu" role="presentation" onclick={swapTabs}>
             <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-menu" id="tab_default-menu__item">Menu</a>
           </li>
-          <li class="slds-tabs_default__item" title="About Us" role="presentation" onclick={swapTabs}>
+          <li class="slds-tabs_default__item disabled" title="About Us" role="presentation" onclick={swapTabs}>
             <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-about" id="tab_default-about__item">About Us</a>
           </li>
-          <li class="slds-tabs_default__item" title="Location" role="presentation" onclick={swapTabs}>
+          <li class="slds-tabs_default__item disabled" title="Location" role="presentation" onclick={swapTabs}>
             <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-location" id="tab_default-location__item">Locations</a>
           </li>
-          <li class="slds-tabs_default__item" title="Rewards" role="presentation" onclick={swapTabs}>
+          <li class="slds-tabs_default__item disabled" title="Rewards" role="presentation" onclick={swapTabs}>
             <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-rewards" id="tab_default-rewards__item">Rewards</a>
           </li>
-          <li class="slds-tabs_default__item" title="Gifts" role="presentation" onclick={swapTabs}>
+          <li class="slds-tabs_default__item disabled" title="Gifts" role="presentation" onclick={swapTabs}>
             <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-gifts" id="tab_default-gifts__item">Gifts</a>
           </li>
         </ul>
       </div>
     </div>
+  
     <div id="tab_default-home" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab_default-home__item">
-      <c-banner></c-banner>
-      <c-seasonal-display></c-seasonal-display>
-      <div class="slds-grid component-row slds-gutters">
-        <div class="slds-col slds-size_1-of-2">
-          <c-featured-items></c-featured-items>
-        </div>
-        <div class="border"></div>
-        <div class="slds-col slds-size_1-of-2">
-          <c-rewards-ad></c-rewards-ad>
-        </div>
-      </div>
+      <c-landing-page></c-landing-page>
     </div>
 
-    <div id="tab_default-menu" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-menu__item">menu Content</div>
-    <div id="tab_default-about" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-about__item">about Content</div>
-    <div id="tab_default-location" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-location__item">Location Content</div>
-    <div id="tab_default-rewards" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-rewards__item">Rewards Content</div>
-    <div id="tab_default-gifts" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-gifts__item">Gifts Content</div>
+    <div id="tab_default-menu" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-menu__item">
+      menu Content
+    </div>
+
+    <div id="tab_default-about" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-about__item">
+      about Content
+    </div>
+
+    <div id="tab_default-location" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-location__item">
+      Location Content
+    </div>
+
+    <div id="tab_default-rewards" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-rewards__item">
+      Rewards Content
+    </div>
+
+    <div id="tab_default-gifts" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-gifts__item">
+      Gifts Content
+    </div>
 
     <c-footer></c-footer>
 </template>

@@ -3,7 +3,6 @@
     /*height: var(--component-row-height);*/
     padding: 8vh 1vw;
     background-color: var(--main-accent);
-    gap: 1vw;
 }
 
 .seasonal-title{

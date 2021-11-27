@@ -1,7 +1,7 @@
 @import 'cssStyles/mainStyles';
 
 :host{
-    --height: 30vh;
+    --height: 15vh;
     --default-padding: 2rem;
 }
 
@@ -16,23 +16,19 @@
 
 .banner-side-img{
     width: var(--height);
-    position: absolute;
-    left: -6rem;
 }
 
 .call-to-action{
     flex: 1;
-    padding-left: 3vw;
-    position: absolute;
-    left: 12rem;
+    padding-left: 2rem;
 }
 
 .main-heading{
-    font-size: 4em;
+    font-size: 2.5em;
     font-family: 'Notable', sans-serif;
 }
 
 .sub-heading{
-    font-size: 3em;
-    padding-left: 2vw;
+    font-size: 2em;
+    padding-left: 2em;
 }

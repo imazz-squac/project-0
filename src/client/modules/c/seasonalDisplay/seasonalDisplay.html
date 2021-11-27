@@ -1,24 +1,9 @@
 <template>
-    <div class="slds-grid">
-        <div class="slds-col slds-size_1-of-12 seasonal-title">
-            <div class="slds-grid_vertical slds-grid title-container">
-                <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>S</strong></p>
-                <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>E</strong></p>
-                <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>A</strong></p>
-                <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>S</strong></p>
-                <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>O</strong></p>
-                <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>N</strong></p>
-                <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>A</strong></p>
-                <p class="slds-col slds-text-heading_large slds-align_absolute-center"><strong>L</strong></p>
+    <div class="slds-grid slds-wrap slds-gutters seasonal-display">
+        <template for:each={items} for:item="sItem">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3" key={sItem.name}>
+                <c-seasonal-item image-alt={sItem.alt} image-path = {sItem.image} item-description = {sItem.desc}  item-name={sItem.name}></c-seasonal-item>
             </div>
-        </div>
-        <div class="slds-col slds-size_11-of-12 ">
-            <div class="slds-grid seasonal-display">
-                <template for:each={items} for:item="sItem">
-                    <c-seasonal-item image-alt={sItem.alt} image-path = {sItem.image} item-description = {sItem.desc} key={sItem.name} item-name={sItem.name}></c-seasonal-item>
-                </template>
-            </div>
-        </div>
+        </template>
     </div>
-    
 </template>

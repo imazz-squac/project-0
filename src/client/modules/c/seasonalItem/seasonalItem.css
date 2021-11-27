@@ -19,3 +19,8 @@
     transform: scale(1.01);
     filter: drop-shadow(4px 4px 8px var(--secondary-color));
 }
+
+.description-container h3{
+    padding: .4rem 0;
+    font-weight: bold;
+}
