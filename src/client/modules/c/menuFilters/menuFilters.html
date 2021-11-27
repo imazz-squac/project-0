@@ -1,0 +1,9 @@
+<template>
+    <div class="filter-list">
+        <ul class="slds-has-dividers_bottom-space">
+            <template for:each={categories} for:item="category">
+                <c-filter-category key={category.name} category-name={category.name} options={category.options}></c-filter-category>
+            </template>
+        </ul>
+    </div>
+</template>
