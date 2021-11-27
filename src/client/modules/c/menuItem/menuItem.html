@@ -1,0 +1,14 @@
+<template>
+    
+    <div class="menu-item-container slds-card"  if:true={display}>
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-4">
+                <img src={itemImage} />
+            </div>
+            <div class="slds-col slds-size_3-of-4">
+                <h2>{itemName}</h2>
+                <p>{itemDescription}</p>
+            </div> 
+        </div>
+    </div>
+</template>

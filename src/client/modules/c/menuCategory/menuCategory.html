@@ -1,0 +1,10 @@
+<template>
+    <h1>{categoryName}</h1>
+    <ul class="slds-has-dividers_around-space">
+        <template for:each={items} for:item="menuItem">
+            <li key={menuItem.name}>
+                <c-menu-item item-name={menuItem.name} item-image={menuItem.image} item-description={menuItem.description} tags={menuItem.categories}></c-menu-item>
+            </li>
+        </template>
+    </ul>
+</template>
