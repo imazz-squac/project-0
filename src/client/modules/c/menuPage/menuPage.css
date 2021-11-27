@@ -1,3 +1,9 @@
 .slds-col{
     padding: 2rem;
 }
+
+.filters{
+    padding: 2rem;
+    padding-right: 0;
+    width: fit-content;
+}

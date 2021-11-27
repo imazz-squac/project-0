@@ -4,10 +4,10 @@
       <h1 class='center-text slds-align_absolute-center page-title'>Bean Juice</h1>
       <div class="slds-tabs_default slds-tabs_medium slds-align_absolute-center">
         <ul class="slds-tabs_default__nav" role="tablist">
-          <li class="slds-tabs_default__item slds-is-active" title="Home" role="presentation" onclick={swapTabs}>
+          <li class="slds-tabs_default__item " title="Home" role="presentation" onclick={swapTabs}>
             <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab_default-home" id="tab_default-home__item">Home</a>
           </li>
-          <li class="slds-tabs_default__item" title="Menu" role="presentation" onclick={swapTabs}>
+          <li class="slds-tabs_default__item slds-is-active" title="Menu" role="presentation" onclick={swapTabs}>
             <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-menu" id="tab_default-menu__item">Menu</a>
           </li>
           <li class="slds-tabs_default__item disabled" title="About Us" role="presentation" onclick={swapTabs}>
@@ -26,11 +26,11 @@
       </div>
     </div>
   
-    <div id="tab_default-home" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab_default-home__item">
+    <div id="tab_default-home" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-home__item">
       <c-landing-page></c-landing-page>
     </div>
 
-    <div id="tab_default-menu" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-menu__item">
+    <div id="tab_default-menu" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab_default-menu__item">
       <c-menu-page></c-menu-page>
     </div>
 

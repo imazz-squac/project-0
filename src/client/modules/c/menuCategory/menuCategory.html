@@ -1,5 +1,5 @@
 <template>
-    <h1>{categoryName}</h1>
+    <h1 if:true={display} class="slds-text-heading_large slds-border_bottom">{categoryName}</h1>
     <ul class="slds-has-dividers_around-space">
         <template for:each={items} for:item="menuItem">
             <li key={menuItem.name}>
