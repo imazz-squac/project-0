@@ -7,29 +7,33 @@
 .products-preview {
     position: absolute;
     right: 0;
-    top: 0;
-    height: 80%;
+    top: 15;
+    height: 90%;
     width: 50vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .product-banner {
     height: 65%;
     width: 75%;
-    border: 1px solid black;
 }
 .view-products-button {
     width: 35%;
+    height: 4rem;
+    background-color: rgb(51, 138, 192);
+    color: white;
+    border: none;
 }
 .view-products-button h2 {
     text-align: center;
+    font-size: large;
+    font-weight: 600;
 }
 .selection {
     height: 3rem;
     width: 15%;
-    border: 1px solid black;
     position: absolute;
     right: 0;
     bottom: 0;

@@ -1,0 +1,19 @@
+.car {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.border {
+    border: 1px solid red;
+}
+.car img {
+    height: 100%;
+}
+.slds-carousel__content {
+    background-color: black;
+    color: white;
+}
+.slds-is-active {
+    background-color: black;
+}

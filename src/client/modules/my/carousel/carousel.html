@@ -1,0 +1,69 @@
+<template>
+    <div id="carousel" class="slds-carousel">
+        <div class="slds-carousel__stage">
+
+            <!-- <span class="slds-carousel__autoplay">
+                <button class="slds-button slds-button_icon slds-button_icon-border-filled slds-button_icon-x-small" aria-pressed="false" title="Stop auto-play">
+                    <svg class="slds-button__icon" aria-hidden="false">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#pause"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Stop auto-play</span>
+                </button>
+            </span> -->
+
+            <div class="slds-carousel__panels" style="transform:translateX(0%)">
+                <div id="content-id-61" class="slds-carousel__panel" role="tabpanel" aria-hidden="false" aria-labelledby="indicator-id-64">
+                    <a href="https://nerf.hasbro.com/en-us/roblox" class="slds-carousel__panel-action slds-text-link_reset" tabindex="0">
+                        <div class="slds-carousel__image">
+                            <img src="../../../resources/banners/roblox.png" alt="ROBLOX" style="margin: 2rem 0"/>
+                        </div>
+                        <div class="slds-carousel__content">
+                            <h2 class="slds-carousel__content-title">ROBLOX</h2>
+                            <p>Bring experiences on Roblox to life with Nerf, including Roblox Arsenal Pulse Laser, Roblox Adopt Me Bees, and Roblox MM2 Shark Seeker!</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="content-id-62" class="slds-carousel__panel" role="tabpanel" aria-hidden="true" aria-labelledby="indicator-id-65">
+                    <a href="https://nerf.hasbro.com/en-us/ultra" class="slds-carousel__panel-action slds-text-link_reset" tabindex="-1">
+                        <div class="slds-carousel__image">
+                            <img src="../../../resources/banners/ultra.png" alt="NERF ULTRA" />
+                        </div>
+                        <div class="slds-carousel__content">
+                            <h2 class="slds-carousel__content-title">NERF ULTRA</h2>
+                            <p>Nerf Ultra is the newest blaster by NERF! Nerf Ultra Darts are the farthest flying Nerf dart ever, blasting up to 120 ft! Check out all of the new blasters ...</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="content-id-63" class="slds-carousel__panel" role="tabpanel" aria-hidden="true" aria-labelledby="indicator-id-66">
+                    <a href="https://nerf.hasbro.com/en-us/alpha-strike" class="slds-carousel__panel-action slds-text-link_reset" tabindex="-1">
+                        <div class="slds-carousel__image">
+                            <img src="../../../resources/banners/strike.png" alt="NERF ALPHA STRIKE" />
+                        </div>
+                        <div class="slds-carousel__content">
+                            <h2 class="slds-carousel__content-title">NERF ALPHA STRIKE</h2>
+                            <p>Explore all Nerf Alpha Strike blasters and accessories in the shop! To learn more about Nerf Alpha Strike, check out these featured videos.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="slds-carousel__indicators" role="tablist" onclick={selectElement}>
+                <li class="slds-carousel__indicator" role="presentation">
+                    <a id="indicator-id-64" class="slds-carousel__indicator-action slds-is-active" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="content-id-61" title="ROBLOX tab">
+                        <span class="slds-assistive-text">ROBLOX tab</span>
+                    </a>
+                </li>
+                <li class="slds-carousel__indicator" role="presentation">
+                    <a id="indicator-id-65" class="slds-carousel__indicator-action" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="content-id-62" title="NERF ULTRA tab">
+                        <span class="slds-assistive-text">NERF ULTRA tab</span>
+                    </a>
+                </li>
+                <li class="slds-carousel__indicator" role="presentation">
+                    <a id="indicator-id-66" class="slds-carousel__indicator-action" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="content-id-63" title="NERF ALPHA STRIKE tab">
+                        <span class="slds-assistive-text">NERF ALPHA STRIKE tab</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
