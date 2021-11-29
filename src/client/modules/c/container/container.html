@@ -2,51 +2,30 @@
     
     <div class="header ">
       <h1 class='center-text slds-align_absolute-center page-title'>Bean Juice</h1>
-      <div class="slds-tabs_default slds-tabs_medium slds-align_absolute-center">
-        <ul class="slds-tabs_default__nav" role="tablist">
-          <li class="slds-tabs_default__item  slds-is-active" title="Home" role="presentation" onclick={swapTabs}>
-            <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab_default-home" id="tab_default-home__item">Home</a>
-          </li>
-          <li class="slds-tabs_default__item" title="Menu" role="presentation" onclick={swapTabs}>
-            <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-menu" id="tab_default-menu__item">Menu</a>
-          </li>
-          <li class="slds-tabs_default__item disabled" title="About Us" role="presentation" onclick={swapTabs}>
-            <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-about" id="tab_default-about__item">About Us</a>
-          </li>
-          <li class="slds-tabs_default__item disabled" title="Location" role="presentation" onclick={swapTabs}>
-            <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-location" id="tab_default-location__item">Locations</a>
-          </li>
-          <li class="slds-tabs_default__item disabled" title="Rewards" role="presentation" onclick={swapTabs}>
-            <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-rewards" id="tab_default-rewards__item">Rewards</a>
-          </li>
-          <li class="slds-tabs_default__item disabled" title="Gifts" role="presentation" onclick={swapTabs}>
-            <a class="slds-tabs_default__link" href="#"  role="tab" tabindex="0" aria-selected="false" aria-controls="tab_default-gifts" id="tab_default-gifts__item">Gifts</a>
-          </li>
-        </ul>
-      </div>
+      <c-slds-tabs-nav tabs={tabs} ontabswap={swapTabs}></c-slds-tabs-nav>
     </div>
   
-    <div id="tab_default-home" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab_default-home__item">
+    <div id="tab_default-home" class="slds-tabs_default__content slds-show home" role="tabpanel" aria-labelledby="tab_default-home__item">
       <c-landing-page></c-landing-page>
     </div>
 
-    <div id="tab_default-menu" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-menu__item">
+    <div id="tab_default-menu" class="slds-tabs_default__content slds-hide menu" role="tabpanel" aria-labelledby="tab_default-menu__item">
       <c-menu-page></c-menu-page>
     </div>
 
-    <div id="tab_default-about" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-about__item">
+    <div id="tab_default-about" class="slds-tabs_default__content slds-hide about" role="tabpanel" aria-labelledby="tab_default-about__item">
       about Content
     </div>
 
-    <div id="tab_default-location" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-location__item">
+    <div id="tab_default-location" class="slds-tabs_default__content slds-hide location" role="tabpanel" aria-labelledby="tab_default-location__item">
       Location Content
     </div>
 
-    <div id="tab_default-rewards" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-rewards__item">
+    <div id="tab_default-rewards" class="slds-tabs_default__content slds-hide rewards" role="tabpanel" aria-labelledby="tab_default-rewards__item">
       Rewards Content
     </div>
 
-    <div id="tab_default-gifts" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab_default-gifts__item">
+    <div id="tab_default-gifts" class="slds-tabs_default__content slds-hide gifts" role="tabpanel" aria-labelledby="tab_default-gifts__item">
       Gifts Content
     </div>
 
