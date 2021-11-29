@@ -1,0 +1,14 @@
+<template>
+    <div class="products-container">
+        <template for:each={productArr} for:item="product">
+            <my-productItem 
+            key={product.model}
+            brand={product.brand}
+            model={product.model}
+            type={product.type}
+            capacity={product.capacity}
+            img={product.img}
+            ></my-productItem>
+        </template>
+    </div>
+</template>

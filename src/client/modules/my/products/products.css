@@ -1,0 +1,9 @@
+.products-container {
+    width: 100%;
+    background-image: url('../../../resources/Backgrounds/background4.jpg');
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+}

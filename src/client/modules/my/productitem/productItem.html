@@ -1,0 +1,24 @@
+<template>
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+       
+            <div class="slds-media__body">
+              <h2 class="slds-card__header-title">
+                <a href="#" class="slds-card__header-link slds-truncate" title="Accounts">
+                  <span>{model}</span>
+                </a>
+              </h2>
+            </div>
+          
+          </header>
+        </div>
+        <img src={img} alt={model} srcset="">
+        <div class="slds-card__body slds-card__body_inner">{type}</div>
+        <footer class="slds-card__footer">
+          <a class="slds-card__footer-action" href="#">View All
+            <span class="slds-assistive-text">Accounts</span>
+          </a>
+        </footer>
+      </article>
+</template>

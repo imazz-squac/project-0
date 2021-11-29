@@ -1,0 +1,12 @@
+.slds-card {
+    height: min-content;
+    margin: 2rem;
+    width: min-content;
+    background-color: #838377;
+    color: white;
+}
+.border {
+    border: 1px solid blue;
+}
+img {
+}
