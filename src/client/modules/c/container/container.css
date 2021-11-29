@@ -4,39 +4,11 @@
     background-color: var(--main-color);
 }
 
-.slds-tabs_default__content{
-    background: var(--main-color);
-}
-
 .page-title{
     font-size: 7em;
     font-family: 'Pacifico', cursive;
 }
 
- .slds-tabs_default__item.slds-is-active:after {
-    background-color: var(--main-accent);
-    height: calc(var(--sds-c-tabs-list-sizing-border,1px) + 3px);
-}
-
-.slds-tabs_default__item:hover:after {
-    background-color: var(--main-accent);
-}
-
-.slds-tabs_default__item:not(.disabled):hover{
-    background: rgba(189, 240, 214,0.3);
-}
-
-.slds-tabs_default__item a{
-    text-decoration: none;
-}
-
-.disabled{
-    background-color: lightgray;
-    color: darkgray;
-}
-.disabled:after{
-    background-color: lightgray;
-}
-.disabled:hover:after{
-    background-color: lightgray;
+.slds-tabs_default__content{
+    background-color: var(--main-color);
 }

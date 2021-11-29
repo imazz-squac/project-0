@@ -1,0 +1,9 @@
+<template>
+    <div class="slds-tabs_default slds-tabs_medium slds-align_absolute-center" ontabswap={swapTabs}>
+        <ul class="slds-tabs_default__nav" role="tablist">
+            <template for:each={tabs} for:item='tab'>
+                <c-slds-tab key={tab.name} tab-name={tab.name} label={tab.label} active={tab.active} disabled={tab.disabled} class={tab.name}></c-slds-tab>
+            </template>
+        </ul>
+    </div>
+</template>
