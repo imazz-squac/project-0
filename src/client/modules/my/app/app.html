@@ -1,9 +1,13 @@
 <template>
-    <my-search></my-search>
+    <my-search darkmode={darkMode}></my-search>
     <my-nav></my-nav>
     <my-header></my-header>
-    <my-featured></my-featured>
+    <my-featured darkmode={darkMode}></my-featured>
     <my-brands></my-brands>
-    <my-footer></my-footer>
+    <my-footer darkmode={darkMode}></my-footer>
+    <svg onclick={handleClick} aria-hidden="true" class="slds-icon slds-icon-text-default dark-mode-svg"
+        title="when needed">
+        <use xlink:href="/resources/slds/icons/utility-sprite/svg/symbols.svg#light_bulb"></use>
+    </svg>
 
 </template>

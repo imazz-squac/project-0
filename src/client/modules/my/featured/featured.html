@@ -1,5 +1,5 @@
 <template>
-    <div class="featured-container">
+    <div if:false={darkmode} class="featured-container">
         <div class="featured-title">
             <h4 class="featured-title-text"><em style="color:grey">NEW FEATURED</em></h4>
             <h1 class="featured-title-text"><em>PRODUCTS</em></h1>
@@ -9,6 +9,23 @@
                 <div class="product-container" key={product.model}>
                     <img src={product.imgSource} alt={product.model} class="product-img">
                     <div class="product-title">
+                        <h4><em>{product.model}</em></h4>
+                        <h6>{product.make}</h6>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </div>
+    <div if:true={darkmode} class="featured-container dark-mode ">
+        <div class="featured-title  ">
+            <h4 class="featured-title-text"><em style="color:grey">NEW FEATURED</em></h4>
+            <h1 class="dark-mode-featured-title-text"><em>PRODUCTS</em></h1>
+        </div>
+        <section class="featured-products-array">
+            <template for:each={productArray} for:item="product">
+                <div class="dark-mode-product-container product-container" key={product.model}>
+                    <img src={product.imgSource} alt={product.model} class="dark-mode-product-img product-img">
+                    <div class="dark-mode-product-title product-title">
                         <h4><em>{product.model}</em></h4>
                         <h6>{product.make}</h6>
                     </div>

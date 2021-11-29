@@ -1,6 +1,7 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, api } from 'lwc';
 
 export default class Featured extends LightningElement {
+    @api darkmode = false;
     productArray = [
         {
             imgSource: "../../../resources/featured_products/pharaoh.jpg",

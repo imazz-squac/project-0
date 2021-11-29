@@ -1,12 +1,11 @@
 .footer-container{
     height: 10rem;
     width: 100%;
-    background-color: black;
-    color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 .footer-info {
     display: flex;
@@ -35,9 +34,13 @@ ul{
 }
 a{
     text-decoration: none;
-    color: white;
     margin-left: 5px;
 }
 a:hover{
     color: blue;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white
 }
