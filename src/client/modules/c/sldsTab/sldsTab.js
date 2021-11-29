@@ -1,4 +1,4 @@
-import { LightningElement, api } from "lwc";
+import { LightningElement, api, track } from "lwc";
 
 export default class SldsTab extends LightningElement {
     @api
@@ -13,26 +13,20 @@ export default class SldsTab extends LightningElement {
     @api
     disabled;
 
-    @api
+    @track
     controls;
 
-    @api
+    @track
     id;
 
     constructor(){
         super();
-        
-    }
-
-    connectedCallback(){
         this.controls = `tab_default-${this.tabName}`;
         this.id = `tab_default-${this.tabName}__item`;
     }
 
     renderedCallback(){
         let tabItem = this.template.querySelector('li');
-        let tabLink = this.template.querySelector('a');
-
         if(this.active){
             tabItem.classList.add('slds-is-active');
             tabItem.setAttribute('aria-selected','true');
