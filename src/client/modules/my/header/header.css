@@ -4,10 +4,16 @@
     background-image: url('../../../resources/Backgrounds/background2.jpg');
     position: relative;
 }
+.logo {
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    width: 15rem;
+}
 .products-preview {
     position: absolute;
     right: 0;
-    top: 15;
+    top: 2rem;
     height: 90%;
     width: 50vw;
     display: flex;
@@ -26,10 +32,17 @@
     color: white;
     border: none;
 }
+.view-products-button:hover {
+    background-color: white;
+    color: black;
+}
 .view-products-button h2 {
     text-align: center;
     font-size: large;
     font-weight: 600;
+}
+.view-products-button:hover h2 {
+    color: black;
 }
 .selection {
     height: 3rem;
@@ -37,4 +50,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
 }

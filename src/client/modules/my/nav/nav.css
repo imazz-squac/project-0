@@ -17,6 +17,14 @@ nav {
 a {
     text-decoration: none;
     color: white;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+a:hover {
+    background-color: white;
+    color: black;
 }
 .nav-button {
     background-color: black;
@@ -27,4 +35,7 @@ a {
     align-items: center;
     justify-content: center;
     transform: rotate(4deg);
+}
+.nav-button:hover {
+    background-color: white;
 }
