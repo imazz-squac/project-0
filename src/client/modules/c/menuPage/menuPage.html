@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-grid">
+        <div class="slds-border_right filters">
+            <c-menu-filters onfilterupdate={updateFilters}></c-menu-filters>
+        </div> 
+        <div class="slds-col">
+            <ul>
+                <template for:each={menuItems} for:item='menuCategory'>
+                    <li key={menuCategory.category}>
+                        <c-menu-category items={menuCategory.items} category-name={menuCategory.category}></c-menu-category>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>

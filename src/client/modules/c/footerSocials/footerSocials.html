@@ -1,0 +1,8 @@
+<template>
+        <h3 class="slds-text-heading_medium slds-align_absolute-center"><strong>Follow Us</strong></h3>
+        <div class="slds-grid slds-gutters socials-container slds-align_absolute-center">
+            <template for:each={socials} for:item="social">
+                <c-social-icon icon-link={social} key={social}></c-social-icon>
+            </template>
+        </div>
+</template>

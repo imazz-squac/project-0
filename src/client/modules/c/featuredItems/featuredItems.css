@@ -1,0 +1,17 @@
+@import 'cssStyles/mainStyles';
+.slds-carousel__indicator-action.slds-is-active, .slds-carousel__indicator-action.slds-is-active:hover{
+    background-color: var(--main-accent);
+    border-color: lightgray;
+}
+
+.slds-carousel__indicator-action:focus{
+    background-color: aquamarine;
+}
+
+.slds-carousel__panel{
+    background-color: white;
+}
+
+.test{
+    transition: opacity .2s ease-in-out;
+}

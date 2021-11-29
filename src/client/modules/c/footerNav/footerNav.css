@@ -1,0 +1,9 @@
+@import 'cssStyles/mainStyles';
+a{
+    color: white;
+}
+
+a:hover{
+    font-weight: 600;
+    color: var(--main-accent);
+}

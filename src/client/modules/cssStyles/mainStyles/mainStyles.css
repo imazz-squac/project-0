@@ -1,0 +1,10 @@
+:host{
+    --main-color: #F9F7F3;
+    --secondary-color: #5E6162;
+    --main-accent: #BDF0D6;
+    --secondary-accent: #94756F;
+
+    --component-row-height: 60vh;
+
+    font-family: 'Roboto', sans-serif;
+}

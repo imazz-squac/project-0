@@ -1,0 +1,10 @@
+<template>
+        <h4 class="slds-text-heading_small">{categoryName}</h4>
+        <ul>
+            <template for:each={options} for:item="option">
+                <li key= {option.id}>
+                    <c-filter-checkbox id={option.id} label-text = {option.label} tag={option.name}></c-filter-checkbox>
+                </li>
+            </template>
+        </ul>
+</template>
