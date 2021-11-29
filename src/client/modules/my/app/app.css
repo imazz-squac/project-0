@@ -12,13 +12,14 @@ div {text-align: center;}
 }
 
 .img1 {
-  margin-left: 10em;
+  margin-left: 0em;
   margin-right: auto;
-  width:10em;
+  width:100em;
   padding-top: 100px;
   padding-right: 30px;
   padding-bottom: 50px;
-  padding-left: 80px;
+  padding-left: 0px;
+  background-color: lightblue;
   
 }
 
@@ -28,9 +29,60 @@ div {text-align: center;}
     margin-right: auto;
     margin-left: auto;
     text-align: left;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
 }
 
-.navi {
-    background-color: blue;
-    font:inherit
+.covidbg {
+    width:100em;
+    background-color: rgb(47, 124, 124);
 }
+
+nav {
+    background-color: rgb(81, 81, 206);
+    font:inherit;
+    margin: 20px 0 0 ;
+    padding: 20px 0;
+}
+    nav ul {
+        list-style: none;
+        margin: 0 9px;
+        padding: 0;
+      }
+      
+      nav li {
+         display: inline-block;
+         padding: 5px 5px;
+      }
+      
+      nav a {
+        font:menu;
+        font-weight: normal;
+        padding: 20px 50px;
+        font-size: 1.40em;
+}
+
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-top: 2em;
+  }
+    

@@ -1,7 +1,22 @@
 .form {
     text-align:center;
+    background-color: thistle;
+    margin-left: 0pt;
+    margin-top: 0px;
+    padding-bottom: 1em;
+
   }
 
   .title {
       text-align: center;
+      background-color: thistle;
+      padding-top: 1em;
+  }
+
+  .enclosingDiv {
+      background-color: thistle;
+  }
+
+  .submitButton {
+      padding-bottom: 1em;
   }
