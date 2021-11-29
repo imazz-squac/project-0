@@ -12,7 +12,7 @@ div {text-align: center;}
 }
 
 .img1 {
-  margin-left: 20em;
+  margin-left: 10em;
   margin-right: auto;
   width:10em;
   padding-top: 100px;
@@ -28,4 +28,9 @@ div {text-align: center;}
     margin-right: auto;
     margin-left: auto;
     text-align: left;
+}
+
+.navi {
+    background-color: blue;
+    font:inherit
 }
